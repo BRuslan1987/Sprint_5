@@ -9,3 +9,6 @@ EMAIL_FOR_LOGIN = ('ruslanbatyrov29012@yandex.ru')
 PASSWORD_FOR_LOGIN = ('Bruslan198')
 
 NAME_FOR_REGISTRATION = ('Батыров Руслан')
+
+
+
