@@ -21,4 +21,3 @@ class Locators():
     LOGO_STELLAR_BURGERS = (By.XPATH, '//div/a[@href="/"]')# Лого сайта
     CONSTRUCTOR_BUTTON = (By.XPATH, '//li/a[@href="/"]')# Кнопка "Конструктор"
     CREATE_BURGER = (By.XPATH, '//h1[text()="Соберите бургер"]')# Элемент "Соберите Бургер"
-    

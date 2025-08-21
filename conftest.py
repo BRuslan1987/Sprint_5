@@ -12,12 +12,10 @@ def driver():
     chrome_options = Options()
     chrome_options.add_argument("--start-fullscreen")
     browser = webdriver.Chrome(options=chrome_options)
-    try:
-        browser.get(constants.MAIN_URL)
-        yield browser
-    finally:
-        browser.quit()
-
+    browser = webdriver.Chrome()
+    browser.get(constants.MAIN_URL)
+    yield browser
+    browser.quit()
 
 @pytest.fixture
 def logged_user(driver):
