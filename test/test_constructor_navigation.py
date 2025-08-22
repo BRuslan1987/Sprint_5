@@ -22,3 +22,4 @@ class TestStellarBurgers:
         conftest.wait_for_element_located(driver, time=5, locator=Locators.FILLING_BUTTON, condition=EC.presence_of_element_located)
         driver.find_element(*Locators.FILLING_BUTTON).click()
         assert 'tab_tab_type_current' in driver.find_element(*Locators.FILLING_BUTTON).get_attribute('class')
+        

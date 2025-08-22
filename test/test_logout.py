@@ -11,3 +11,4 @@ class TestStellarBurgers:
             driver.find_element(*Locators.LOGOUT_BUTTON).click()
             conftest.wait_for_element_located(driver, time=7, locator=Locators.LOGIN_BUTTON, condition=EC.presence_of_element_located)
             assert LOGIN_PAGE == driver.current_url
+            
