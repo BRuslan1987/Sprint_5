@@ -15,3 +15,4 @@ class TestStellarBurgers:
         conftest.wait_for_element_located(driver, time=5, locator=Locators.CONSTRUCTOR_BUTTON, condition=EC.visibility_of_element_located)
         driver.find_element(*Locators.CONSTRUCTOR_BUTTON).click()
         assert conftest.wait_for_element_located(driver, time=5, locator=Locators.CREATE_BURGER, condition=EC.visibility_of_element_located)
+

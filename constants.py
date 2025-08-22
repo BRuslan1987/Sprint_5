@@ -12,3 +12,4 @@ NAME_FOR_REGISTRATION = ('Батыров Руслан')
 
 
 
+
