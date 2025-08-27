@@ -29,5 +29,9 @@ def logged_user(driver):
     return driver
 
 
-def wait_for_element_located(driver, locator, time, condition):
+@pytest.fixture
+def wait_for_element_located(driver):
+    def _wait_for_element_located(locator, time, condition):
         return WebDriverWait(driver, time).until(condition(locator))
+    return _wait_for_element_located
+
